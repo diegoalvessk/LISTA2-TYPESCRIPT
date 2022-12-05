@@ -18,4 +18,9 @@ function validarusuario(nome) {
     if (primeiraLetra == "1" || primeiraLetra == "2" || primeiraLetra == "3" || primeiraLetra == "4" || primeiraLetra == "5" || primeiraLetra == "6" || primeiraLetra == "7" || primeiraLetra == "8" || primeiraLetra == "9" || primeiraLetra == "0") {
         alert("Nome inválido pois começa com um número.");
     }
+    var ultimaLetra;
+    ultimaLetra = nome.slice(-1);
+    if (ultimaLetra == "_") {
+        alert("Nome inválido pois termina com _.");
+    }
 }

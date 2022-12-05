@@ -23,5 +23,12 @@ function validarusuario(nome : string) : void{
         alert("Nome inválido pois começa com um número.")
     }
 
+    let ultimaLetra : string
+    ultimaLetra = nome.slice(-1)
+
+    if(ultimaLetra == "_"){
+        alert("Nome inválido pois termina com _.")
+    }
+
 
 }
